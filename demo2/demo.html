@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Services</title>
+    <script src="lib/angular.js"></script>
+    <script src="js/demo.js"></script>
+  </head>
+  <body ng-app="app">
+    <div ng-controller="demoController">
+      <div ng-show='spinner'>Loading...</div>
+      <div ng-show='error'>Error getting feed...</div>
+      <pre>{{github | json}}</pre>
+    </div>
+  </body>
+</html>
